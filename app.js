@@ -14,7 +14,7 @@ const calendarControllers = require(path.join(global.appRoot, '/services/calenda
 
 if(config.App.server.env === 'dev') {
 	let cors = require('cors');
-	const whitelist = ['http://localhost:3000', 'http://127.0.0.1:3000']
+	const whitelist = config.App.whiteListedClients;
 	app.use(cors({
 		origin: function (origin, callback) {
 			if (whitelist.indexOf(origin) !== -1) {
