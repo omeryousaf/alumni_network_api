@@ -1,0 +1,11 @@
+.DS_Store
+.DS_Store?
+.idea/
+node_modules/
+public/bower_components/
+public/dist/
+uploads/
+npm-debug.log
+tests/
+nodejs_config/config.js
+package-lock.json
