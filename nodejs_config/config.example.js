@@ -1,5 +1,5 @@
 exports.App = {
-    CouchServerIp: 'http://127.0.0.1:5984',
+    CouchServerIp: 'http://username:password@127.0.0.1:5984', //credentials should be replaced with couchdb credentials
     server: {
         ip: 'http://127.0.0.1',
         port: '3001',
