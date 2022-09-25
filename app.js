@@ -5,6 +5,10 @@ var passport = require('./services/authentication.js');
 var expressSession = require('express-session');
 var routes = require('./routes/index.js');
 var path = require('path');
+const cors = require('cors');
+app.use(cors({
+  origin:["http://127.0.0.1:8001", "http://localhost:8001"],
+}))
 
 global.appRoot = path.resolve(__dirname);
 
